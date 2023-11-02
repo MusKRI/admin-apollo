@@ -1,8 +1,8 @@
-// type InputProp = {
-//   type: any[]; // Replace 'any[]' with the specific type you intend to use for 'value'
-// };
+type InputProp = {
+  type: any[]; // Replace 'any[]' with the specific type you intend to use for 'value'
+};
 
-const MediaField = () => {
+const MediaField = ({}: InputProp) => {
   return (
     <>
       <>
