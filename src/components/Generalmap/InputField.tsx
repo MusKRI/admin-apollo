@@ -18,7 +18,10 @@ const InputFields = ({ type }: InputProp) => {
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const formData = new FormData();
-    formData.append("fileInput", e.target.files[0]);
+    formData.append(
+      "fileInput",
+      ((e as ChangeEvent<HTMLInputElement>).target.files as FileList)[0]
+    );
 
     let imgResponse = await axios.post(
       "https://webwila.com/giftopedia/public/api/v1/media/upload?fileInput",

@@ -10,8 +10,8 @@ type GeneralMapProps = {
     [key: string]: {
       Heading: any;
       Parent: any;
-      Page: any;
-      child: {
+      Page?: any;
+      child?: {
         type: any;
         name: any;
         className: any;
