@@ -2,7 +2,8 @@ type InputProp = {
   type: any[]; // Replace 'any[]' with the specific type you intend to use for 'value'
 };
 
-const MediaField = ({}: InputProp) => {
+const MediaField = ({ type }: InputProp) => {
+  
   return (
     <>
       <>
@@ -10,9 +11,8 @@ const MediaField = ({}: InputProp) => {
           type="file"
           // name={value.name}
           id=""
-          onChange={(e: any) => {
-            console.log(e.target.value);
-          }}
+           onChange={(e:any)=>{console.log(e.target.value)}}
+         
         />
       </>
     </>
