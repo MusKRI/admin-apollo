@@ -1,5 +1,5 @@
 import axios from "axios";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent } from "react";
 
 type InputProp = {
   type: {

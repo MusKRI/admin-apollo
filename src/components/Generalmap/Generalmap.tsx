@@ -67,7 +67,7 @@ const Generalmap: React.FC<GeneralMapProps> = ({ value }) => {
   //Initial values for the formik
   const [initialValues, setInitialValues] = useState<any>(initialFormValues);
 
-  const handleSubmit = async (values: any, { setFieldValue }: any) => {
+  const handleSubmit = async (values: any, {}: any) => {
     console.log(values, "valesssss");
     let PageName = value?.[0].Section1?.[0].Page;
     let body = PayLoadBody?.[PageName];
