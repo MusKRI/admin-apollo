@@ -49,10 +49,21 @@ const Generalmap: React.FC<GeneralMapProps> = ({ value }) => {
   const [nameState, setNameState] = useState("");
   const [urlState, setUrlState] = useState("");
 
+  const [completeMediaData, setCompleteMediaData] = useState({});
+
   const handleMedia = (name: string, url: string) => {
     setNameState(name);
     setUrlState(url);
+
+    setCompleteMediaData((prev) => {
+      return {
+        ...prev,
+        [name]: url,
+      };
+    });
   };
+
+  // console.log("Complete Media Data", completeMediaData);
 
   value?.forEach((childData) => {
     Object?.values(childData)?.forEach((section) => {
@@ -63,7 +74,7 @@ const Generalmap: React.FC<GeneralMapProps> = ({ value }) => {
       });
     });
   });
-  console.log(initialFormValues, "initialFormValues");
+  // console.log(initialFormValues, "initialFormValues");
   //Initial values for the formik
   const [initialValues, setInitialValues] = useState<any>(initialFormValues);
 
@@ -76,7 +87,7 @@ const Generalmap: React.FC<GeneralMapProps> = ({ value }) => {
       ...body,
       meta_data: {
         ...(body.meta_data as object),
-        [nameState]: urlState,
+        ...completeMediaData,
       },
     };
     console.log("body_meta_data", bodyContent);
