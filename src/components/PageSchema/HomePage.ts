@@ -37,7 +37,7 @@ export let HomeSchema = [
 
           {
             type: "text",
-            name: "AboutusMainHeading",
+            name: "MainHeading",
             className: "col-12 mt-3 form-control",
             placeholder: "Main Heading",
           },
@@ -55,7 +55,7 @@ export let HomeSchema = [
           },
           {
             type: "Area",
-            name: "SubHeading-1-Description",
+            name: "SubHeading-1-Description ",
             className: "col-12 mt-3 form-control",
             placeholder: "Main Description",
           },
@@ -67,7 +67,7 @@ export let HomeSchema = [
           },
           {
             type: "Area",
-            name: "Sub-Heading-2-Description",
+            name: "Sub-Heading-2-Description ",
             className: "col-12 mt-3 form-control",
             placeholder: "Main Description",
           },
@@ -86,12 +86,12 @@ export let HomeSchema = [
         child: [
           {
             type: "text",
-            name: "BusinessMainHeading",
+            name: "MainHeading",
             className: "col-12 mt-3 form-control ",
           },
           {
             type: "text",
-            name: "MapHeading",
+            name: "SubHeading",
             className: "col-12 mt-3 form-control ",
           },
 
@@ -101,9 +101,13 @@ export let HomeSchema = [
             name: "BusinessSlide1",
             className: "col-12 mt-3 form-control ",
           },
-
           {
             type: "text",
+            name: "CardName1",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "Area",
             name: "CardHeading1",
             className: "col-12 mt-3 form-control ",
           },
@@ -124,15 +128,19 @@ export let HomeSchema = [
           },
           {
             type: "text",
-            name: "CardHeading2",
+            name: "BusinessSlideContent2",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "CardName2",
             className: "col-12 mt-3 form-control ",
           },
           {
             type: "Area",
-            name: "BusinessSlideContent2",
+            name: "CardHeading2",
             className: "col-12 mt-3 form-control ",
           },
-
           {
             type: "text",
             name: "KnowMore2",
@@ -145,15 +153,19 @@ export let HomeSchema = [
           },
           {
             type: "text",
-            name: "CardHeading3",
+            name: "BusinessSlideContent3",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "CardName3",
             className: "col-12 mt-3 form-control ",
           },
           {
             type: "Area",
-            name: "BusinessSlideContent3",
+            name: "CardHeading3",
             className: "col-12 mt-3 form-control ",
           },
-
           {
             type: "text",
             name: "KnowMore3",
@@ -166,15 +178,19 @@ export let HomeSchema = [
           },
           {
             type: "text",
-            name: "CardHeading4",
+            name: "BusinessSlideContent4",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "CardName4",
             className: "col-12 mt-3 form-control ",
           },
           {
             type: "Area",
-            name: "BusinessSlideContent4",
+            name: "CardHeading4",
             className: "col-12 mt-3 form-control ",
           },
-
           {
             type: "text",
             name: "KnowMore4",
@@ -187,15 +203,19 @@ export let HomeSchema = [
           },
           {
             type: "text",
-            name: "CardHeading5",
+            name: "BusinessSlideContent5",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "CardName5",
             className: "col-12 mt-3 form-control ",
           },
           {
             type: "Area",
-            name: "BusinessSlideContent5",
+            name: "CardHeading5",
             className: "col-12 mt-3 form-control ",
           },
-
           {
             type: "text",
             name: "KnowMore5",
@@ -204,28 +224,6 @@ export let HomeSchema = [
         ],
       },
     ],
-
-    Section5: [
-      {
-        Heading: "Final Section",
-        Parent: "row",
-        child: [
-          {
-            type: "file",
-            name: "FInal_image",
-            className: "col-12 mt-3 form-control ",
-          },
-
-          {
-            type: "Area",
-            name: "FinalSection",
-            className: "col-12 mt-3 form-control",
-            placeholder: "Main Heading",
-          },
-        ],
-      },
-    ],
-
     Section4: [
       {
         Heading: "Humble Section",
@@ -237,7 +235,12 @@ export let HomeSchema = [
             className: "col-12 mt-3 form-control ",
             placeholder: "HumbleSection",
           },
-
+          {
+            type: "Area",
+            name: "HumbleSubSection",
+            className: "col-12 mt-3 form-control",
+            placeholder: "HumbleSubSection",
+          },
           {
             type: "Area",
             name: "HumbleFinalSection",

@@ -6,6 +6,7 @@ import {
   Leaf,
   Link,
   Building,
+  Club,
 } from "lucide-react";
 
 // **** Local Imports ****
@@ -53,6 +54,12 @@ const pageNodes = [
     subtitle: "Manage Supply Chain Page",
     href: "/pages/supply-chain",
     Icon: Link,
+  },
+  {
+    title: "Fashion",
+    subtitle: "Manage Fashion Page",
+    href: "/pages/fashion",
+    Icon: Club,
   },
 ];
 

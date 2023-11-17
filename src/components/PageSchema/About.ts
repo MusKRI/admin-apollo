@@ -4,7 +4,7 @@ export let AboutSchema = [
       {
         Heading: "Aboutus Page",
         Parent: "row",
-        Page:"AboutUs",
+        Page: "AboutUs",
         child: [
           {
             type: "file",
@@ -27,8 +27,6 @@ export let AboutSchema = [
             className: "col-12 mt-3 form-control",
           },
         ],
-
-       
       },
     ],
     Section2: [
@@ -99,7 +97,6 @@ export let AboutSchema = [
             className: "col-12 mt-3 form-control ",
           },
         ],
-       
       },
     ],
     Section3: [
@@ -143,7 +140,6 @@ export let AboutSchema = [
             className: "col-12 mt-3 form-control ",
           },
         ],
-      
       },
     ],
     Section4: [

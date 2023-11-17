@@ -10,11 +10,12 @@ import CurrentSingleOpening from "@/app/(dashboard)/(routes)/current-openings/[c
 import Homepage from "@/app/(dashboard)/(routes)/pages/HomePage/Homepage";
 import SupplyChain from "@/app/(dashboard)/(routes)/pages/HomePage/SupplyChain";
 import People from "@/app/(dashboard)/(routes)/pages/HomePage/People";
- 
+
 import Carrer from "@/app/(dashboard)/(routes)/pages/HomePage/Carrer";
 import Business from "@/app/(dashboard)/(routes)/pages/HomePage/Business";
 import Aboutus from "@/app/(dashboard)/(routes)/pages/HomePage/Aboutus";
 import ContactUs from "@/app/(dashboard)/(routes)/pages/HomePage/Contactus";
+import Fashion from "@/app/(dashboard)/(routes)/pages/HomePage/Fashion";
 
 const RoutesComponent = () => {
   return (
@@ -34,6 +35,7 @@ const RoutesComponent = () => {
             <Route path="our-business" element={<Business />} />
             <Route path="supply-chain" element={<SupplyChain />} />
             <Route path="aboutus" element={<Aboutus />} />
+            <Route path="fashion" element={<Fashion />} />
           </Route>
           <Route path="/current-openings" element={<Outlet />}>
             <Route index element={<CurrentOpeningsPage />} />

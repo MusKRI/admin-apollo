@@ -4,7 +4,7 @@ export let CareerSchema = [
       {
         Heading: "Career Page",
         Parent: "row",
-        Page:'Career',
+        Page: "Career",
         child: [
           {
             type: "file",
@@ -27,8 +27,6 @@ export let CareerSchema = [
             className: "col-12 mt-3 form-control",
           },
         ],
-
-      
       },
     ],
     Section2: [

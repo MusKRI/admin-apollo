@@ -4,7 +4,7 @@ export let BusinessSchema = [
       {
         Heading: "Business Page",
         Parent: "row",
-        Page:"Business",
+        Page: "Business",
         child: [
           {
             type: "file",
@@ -27,8 +27,6 @@ export let BusinessSchema = [
             className: "col-12 mt-3 form-control",
           },
         ],
-
-         
       },
     ],
     Section2: [

@@ -4,7 +4,7 @@ export let SupplySchema = [
       {
         Heading: "Upload Supply Slides",
         Parent: "row",
-        Page:"Supply_Chain",
+        Page: "Supply_Chain",
         child: [
           {
             type: "file",
@@ -22,177 +22,306 @@ export let SupplySchema = [
             className: "col-12 mt-3 form-control",
           },
           {
-            type: "file",
-            name: "Slide4",
+            type: "text",
+            name: "SlideHeading",
             className: "col-12 mt-3 form-control",
           },
           {
-            type: "file",
-            name: "Slide5",
+            type: "text",
+            name: "SlideContent",
+            className: "col-12 mt-3 form-control",
+          },
+          {
+            type: "text",
+            name: "SlideReadMoreLink",
             className: "col-12 mt-3 form-control",
           },
         ],
-       
       },
     ],
     Section2: [
       {
-        Heading: "About us",
+        Heading: "Our Identity",
         Parent: "row",
         child: [
           {
             type: "file",
-            name: "MainImage",
+            name: "IdentityImage",
             className: "col-12 mt-3 form-control ",
           },
           {
-            type: "file",
-            name: "minImage1",
+            type: "text",
+            name: "IdentityContent1",
             className: "col-12 mt-3 form-control",
           },
           {
-            type: "file",
-            name: "minImage2",
+            type: "text",
+            name: "IdentityContent2",
             className: "col-12 mt-3 form-control",
           },
 
           {
             type: "text",
-            name: "mainHeading",
+            name: "IdentityReadMoreLink",
             className: "col-12 mt-3 form-control",
-            placeholder: "Main Heading",
           },
+
           {
-            type: "Area",
-            name: "Main Description",
+            type: "text",
+            name: "Score1",
             className: "col-12 mt-3 form-control",
-            placeholder: "Main Description",
+          },
+
+          {
+            type: "text",
+            name: "ScoreContent1",
+            className: "col-12 mt-3 form-control",
           },
           {
             type: "text",
-            name: "Sub Heading 1",
+            name: "Score2",
             className: "col-12 mt-3 form-control",
-            placeholder: "Main Description",
           },
+
           {
-            type: "Area",
-            name: "Sub Heading 1 Description ",
+            type: "text",
+            name: "ScoreContent2",
             className: "col-12 mt-3 form-control",
-            placeholder: "Main Description",
           },
           {
             type: "text",
-            name: "Sub Heading 2",
+            name: "Score3",
             className: "col-12 mt-3 form-control",
-            placeholder: "Main Description",
           },
+
           {
-            type: "Area",
-            name: "Sub Heading 2 Description ",
+            type: "text",
+            name: "ScoreContent3",
             className: "col-12 mt-3 form-control",
-            placeholder: "Main Description",
           },
         ],
-
-        
       },
     ],
     Section3: [
       {
-        Heading: "Business Section",
+        Heading: "Areas of Expertise Section",
         Parent: "row",
         child: [
           {
             type: "text",
-            name: "mainHeading",
+            name: "ExpertiseMainHeading",
             className: "col-12 mt-3 form-control ",
           },
           {
             type: "text",
-            name: "SubHeading",
+            name: "ExpertiseSubHeading",
             className: "col-12 mt-3 form-control ",
           },
           {
             type: "file",
-            name: "BusinessSlide1",
+            name: "ExpertiseSlide1",
             className: "col-12 mt-3 form-control ",
           },
           {
             type: "text",
-            name: "BusinessSlideContent",
+            name: "ExpertiseSlideContent1",
             className: "col-12 mt-3 form-control ",
           },
           {
             type: "file",
-            name: "BusinessSlide2",
+            name: "ExpertiseSlide2",
             className: "col-12 mt-3 form-control",
           },
           {
             type: "text",
-            name: "BusinessSlideContent",
+            name: "ExpertiseSlideContent2",
             className: "col-12 mt-3 form-control ",
           },
           {
             type: "file",
-            name: "BusinessSlide3",
+            name: "ExpertiseSlide3",
             className: "col-12 mt-3 form-control",
           },
           {
             type: "text",
-            name: "BusinessSlideContent",
+            name: "ExpertiseSlideContent3",
             className: "col-12 mt-3 form-control ",
           },
           {
             type: "file",
-            name: "BusinessSlide4",
+            name: "ExpertiseSlide4",
             className: "col-12 mt-3 form-control",
           },
           {
             type: "text",
-            name: "BusinessSlideContent",
+            name: "ExpertiseSlideContent4",
             className: "col-12 mt-3 form-control ",
           },
           {
             type: "file",
-            name: "BusinessSlide5",
+            name: "ExpertiseSlide5",
             className: "col-12 mt-3 form-control",
           },
           {
             type: "text",
-            name: "BusinessSlideContent",
+            name: "ExpertiseSlideContent",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "file",
+            name: "ExpertiseSlide6",
+            className: "col-12 mt-3 form-control",
+          },
+          {
+            type: "text",
+            name: "ExpertiseSlideContent6",
             className: "col-12 mt-3 form-control ",
           },
         ],
-        
       },
     ],
     Section4: [
       {
-        Heading: "Humble Section",
+        Heading: "Edge Section",
         Parent: "row",
         child: [
           {
-            type: "Area",
-            name: "HumbleSection",
+            type: "file",
+            name: "EdgeSectionimg",
             className: "col-12 mt-3 form-control ",
-            placeholder: "HumbleSection",
           },
           {
-            type: "Area",
-            name: "HumbleSubSection",
-            className: "col-12 mt-3 form-control",
-            placeholder: "HumbleSubSection",
+            type: "text",
+            name: "EdgeSectionHeading",
+            className: "col-12 mt-3 form-control ",
           },
           {
-            type: "Area",
-            name: "HumbleFinalSection",
-            className: "col-12 mt-3 form-control",
-            placeholder: "HumbleFinalSection",
+            type: "text",
+            name: "EdgeSectionContent",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "CollpaseHeading1",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "CollpaseContent1",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "CollpaseHeading2",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "CollpaseContent2",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "CollpaseHeading3",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "CollpaseContent3",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "CollpaseHeading4",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "CollpaseContent4",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "CollpaseReadMoreLink",
+            className: "col-12 mt-3 form-control ",
+          },
+        ],
+      },
+    ],
+
+    Section6: [
+      {
+        Heading: "Sectors Section",
+        Parent: "row",
+        child: [
+          {
+            type: "text",
+            name: "SectorLeftHeading",
+            className: "col-12 mt-3 form-control ",
           },
           {
             type: "file",
-            name: "HumbleLogo",
-            className: "col-12 mt-3 form-control",
+            name: "img1",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "SectorRightHeading",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "SectorCard1",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "SectorCard2",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "SectorCard3",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "SectorCard4",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "SectorCard5",
+            className: "col-12 mt-3 form-control ",
+          },
+        ],
+      },
+    ],
+
+    Section7: [
+      {
+        Heading: "SnapShot Section",
+        Parent: "row",
+        child: [
+          {
+            type: "file",
+            name: "img1",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "file",
+            name: "img2",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "file",
+            name: "img3",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "file",
+            name: "img4",
+            className: "col-12 mt-3 form-control ",
           },
         ],
         btnContainer: "col-3 mt-4",
