@@ -9,11 +9,7 @@ import {
   DropdownMenuTrigger,
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu/dropdown-menu";
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@/components/ui/avatar/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar/avatar";
 import { useNavigate } from "react-router-dom";
 
 const UserDropdown = () => {
