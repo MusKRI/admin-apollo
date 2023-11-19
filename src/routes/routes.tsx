@@ -16,14 +16,15 @@ import Business from "@/app/(dashboard)/(routes)/pages/HomePage/Business";
 import Aboutus from "@/app/(dashboard)/(routes)/pages/HomePage/Aboutus";
 import ContactUs from "@/app/(dashboard)/(routes)/pages/HomePage/Contactus";
 import Fashion from "@/app/(dashboard)/(routes)/pages/HomePage/Fashion";
+import { RouteProtector } from "./route-protector";
 
 const RoutesComponent = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/dashboard" />} />
+      <Route path="/" element={<Navigate to="/login" />} />
       <Route path="/login" element={<LoginPage />} />
 
-      <Route element={<Outlet />}>
+      <Route element={<RouteProtector />}>
         <Route element={<DasbhoardLayout />}>
           <Route path="/dashboard" element={<h1>Dashboard Home</h1>} />
           <Route path="/pages" element={<Outlet />}>

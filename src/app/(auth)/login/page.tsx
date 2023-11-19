@@ -2,7 +2,7 @@
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-// import { Link, useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import { useMutation } from "@tanstack/react-query";
 import { AxiosError } from "axios";
@@ -46,6 +46,14 @@ const formSchema = z.object({
 type LoginFormValues = z.infer<typeof formSchema>;
 
 const LoginPage = () => {
+  const navigate = useNavigate();
+
+  const token = localStorage.getItem("apollo-token");
+
+  if (token) {
+    return <Navigate to="/dashboard" />;
+  }
+
   // 1. Define your form.
   const form = useForm<LoginFormValues>({
     resolver: zodResolver(formSchema),
@@ -62,6 +70,9 @@ const LoginPage = () => {
       toast.success("Login success!");
       form.reset();
       console.log(data);
+
+      localStorage.setItem("apollo-token", data?.data?.token?.access_token);
+      navigate("/dashboard");
     },
 
     onError: (error: AxiosError) => {
