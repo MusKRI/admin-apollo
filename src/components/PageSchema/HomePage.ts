@@ -259,5 +259,30 @@ export let HomeSchema = [
         Btnstyle: { background: "blue", color: "white" },
       },
     ],
+    Section5: [
+      {
+        Heading: "People and Planet",
+        Parent: "row",
+        child: [
+          {
+            type: "text",
+            name: "PeopleMainHeading",
+            className: "col-12 mt-3 form-control ",
+          },
+          {
+            type: "text",
+            name: "PeopleSubHeading",
+            className: "col-12 mt-3 form-control ",
+          },
+
+          //cardContent starts here
+          {
+            type: "file",
+            name: "PeopleBusinessSlide1",
+            className: "col-12 mt-3 form-control ",
+          },
+        ],
+      },
+    ],
   },
 ];
